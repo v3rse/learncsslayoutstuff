@@ -2,6 +2,7 @@
     border:solid;
     max-width:600px;
     margin:0 auto;
+    position:static;
 }
 
 .compare {
