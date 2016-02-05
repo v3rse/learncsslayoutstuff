@@ -10,8 +10,9 @@ img {
     border:solid red;
 }
 
-section {
+.after-img {
     border:solid yellow;
+    clear:left; /*can be "right" or "both"*/
 }
 
 body {
