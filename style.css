@@ -4,8 +4,7 @@
 }
 
 nav {
-    position:absolute;
-    left:0px;
+    float: left; /*floated*/
     width:200px;
     border:solid pink;
     color:pink;
