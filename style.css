@@ -5,8 +5,13 @@
 }
 
 img {
-    float: right;
-    margin: 1em 0 1em 1em;
+    float: left;
+    margin: 1em 1em 0 1em;
+    border:solid red;
+}
+
+section {
+    border:solid yellow;
 }
 
 body {
