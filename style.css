@@ -5,7 +5,7 @@
 
 nav {
     float: left; /*floated*/
-    width:200px;
+    width:25%;
     border:solid pink;
     color:pink;
     padding:10px;
@@ -14,8 +14,8 @@ nav {
 }
 
 section {
-    margin-left:200px;/* for nav prevent overlap */
     border:solid yellow;
+    margin-left:25%;
     padding:10px;
 }
 
