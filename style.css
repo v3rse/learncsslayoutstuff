@@ -3,9 +3,27 @@
     position:relative;
 }
 
+/* Media queries */
+/* Larger screens */
+@media screen and (min-width:600px) {
+    nav {
+      float: left; /*floated*/
+      width:25%;
+    }
+
+    section {
+      margin-left:25%;
+    }
+}
+
+/* Smaller screens */
+@media screen and (max-width:599px){
+    nav li {
+        display: inline;
+    }
+}
+
 nav {
-    float: left; /*floated*/
-    width:25%;
     border:solid pink;
     color:pink;
     padding:10px;
@@ -15,7 +33,6 @@ nav {
 
 section {
     border:solid yellow;
-    margin-left:25%;
     padding:10px;
 }
 
