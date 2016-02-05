@@ -1,18 +1,18 @@
 .container {
     border:solid blue;
-    max-width:600px;
+    overflow: auto; /*clearfixed*/
+/*     zoom:1; */ /* for IE 6 */
     margin:auto;
 }
 
 img {
-    float: left;
-    margin: 1em 1em 0 1em;
+    float: right;
+    margin: 0 0 0 0;
     border:solid red;
 }
 
 .after-img {
     border:solid yellow;
-    clear:left; /*can be "right" or "both"*/
 }
 
 body {
