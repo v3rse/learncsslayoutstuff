@@ -1,18 +1,31 @@
 .container {
     border:solid blue;
-/*     max-width:600px; */
-    overflow: auto; /*clearfixed*/
-/*     zoom:1; */ /* for IE 6 */
-    margin:auto;
 }
 
-img {
-    float: right;
-    width: 50%;
+/* floated grid */
+.box {
     border:solid red;
+    float:left;
+    width:200px;
+    height:100px;
+    margin:1em;
 }
 
-.after-img {
+
+/* inline-block grid: arrangement algorithm slightly different from above */
+.box2 {
+    border:solid green;
+    display:inline-block;
+    width:200px;
+    height:100px;
+    margin:1em;
+}
+
+.after-box {
+    clear:left;
+}
+
+div {
     border:solid yellow;
 }
 
