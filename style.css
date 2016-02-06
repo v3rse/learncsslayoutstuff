@@ -1,24 +1,20 @@
 .container {
     border:solid blue;
-    position:relative;
+    display: -webkit-flex;
+    display: flex;
 }
 
 /* Media queries */
 /* Larger screens */
-/* inline-block elements are affected by the vertical-align property, which you probably want set to top. */
-/* You need to set the width of each column */
-/* There will be a gap between the columns if there is any whitespace between them in the HTML */
+/*Flexbox layout*/
 @media screen and (min-width:600px) {
     nav {
-      display:inline-block;
-      vertical-align: top;
-      width:25%;
+      width:200px;
     }
 
-    .column{
-      display:inline-block;
-      vertical-align: top;
-      width:75%;  
+    .flex-column{
+      -webkit-flex: 1;
+      flex:1;  
     }
 }
 
@@ -40,6 +36,11 @@ nav {
 section {
     border:solid yellow;
     padding:10px;
+}
+
+.flex-column {
+    border:solid green;
+    box-sizing:border-box;
 }
 
 footer {
