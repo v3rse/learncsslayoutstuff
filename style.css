@@ -1,15 +1,49 @@
-/* IE 9[below] and Opera mini not support */
-.three-column {
-    border:solid yellow;
-    padding: 1em;
-    -webkit-column-count:3;
-    -webkit-column-gap:1em;
-    -moz-column-count:3;
-    -moz-column-gap:1em;
-    column-count:3;
-    column-gap:1em;
+/* has the effect of using iniline-box on each child element */
+.container {
+    border: solid blue;
+    display: -webkit-flex;
+    display: flex;
 }
 
-body {
-    font-family:monospace;
+.vertical-container {
+    border: solid dodgerblue;
+    margin-top: 10px;
+    height: 300px;
+    display: -webkit-flex;
+    display:         flex;
+    -webkit-align-items: center;
+            align-items: center;
+    -webkit-justify-content:center;
+            justify-content:center;
+}
+
+.initial {
+    border: solid red;
+    -webkit-flex: initial;
+            flex: initial;
+    width: 200px;
+    min-width: 100px;
+}
+
+.none {
+    border: solid green;
+    -webkit-flex: none;
+            flex: none;
+     width: 200px;
+}
+
+.flex1 {
+    border: solid yellow;
+    -webkit-flex: 1;
+            flex: 1;
+}
+
+.flex2 {
+    border: solid aqua;
+    -webkit-flex: 2;
+            flex: 2;
+}
+
+div {
+    border: solid blueviolet;
 }
