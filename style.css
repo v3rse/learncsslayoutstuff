@@ -5,14 +5,20 @@
 
 /* Media queries */
 /* Larger screens */
+/* inline-block elements are affected by the vertical-align property, which you probably want set to top. */
+/* You need to set the width of each column */
+/* There will be a gap between the columns if there is any whitespace between them in the HTML */
 @media screen and (min-width:600px) {
     nav {
-      float: left; /*floated*/
+      display:inline-block;
+      vertical-align: top;
       width:25%;
     }
 
-    section {
-      margin-left:25%;
+    .column{
+      display:inline-block;
+      vertical-align: top;
+      width:75%;  
     }
 }
 
